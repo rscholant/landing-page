@@ -59,7 +59,7 @@
     "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
   },
   "lint-staged": {
-    "**/*.ts": [
+    "**/*.{ts,tsx}": [
       "eslint --fix",
       "prettier --write --ignore-unknown",
       "yarn test"
