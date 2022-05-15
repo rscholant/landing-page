@@ -61,8 +61,7 @@
   "lint-staged": {
     "**/*.{ts,tsx}": [
       "eslint --fix",
-      "prettier --write --ignore-unknown",
-      "yarn test"
+      "prettier --write --ignore-unknown"
     ]
   },
   "config": {
