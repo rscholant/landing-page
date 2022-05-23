@@ -8,7 +8,7 @@ import theme from "../src/theme";
 import createEmotionCache from "../src/createEmotionCache";
 const clientSideEmotionCache = createEmotionCache();
 
-export default function MyApp(props) {
+export default function MyApp(props: any) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
 
   return (
