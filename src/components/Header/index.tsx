@@ -22,7 +22,7 @@ const Header: React.FC = () => {
             alignItems: "center",
           }}
         >
-          <Button variant="outlined" sx={{ borderRadius: 8 }}>
+          <Button variant="outlined" sx={{ borderRadius: 4 }} size="large">
             Diga Olá!
           </Button>
         </Container>

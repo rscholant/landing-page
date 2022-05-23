@@ -3,7 +3,6 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 import createEmotionServer from "@emotion/server/create-instance";
 import theme from "../src/theme";
 import createEmotionCache from "../src/createEmotionCache";
-
 export default class MyDocument extends Document {
   render() {
     return (
@@ -13,8 +12,8 @@ export default class MyDocument extends Document {
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link rel="shortcut icon" href="/static/favicon.ico" />
           <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400&family=Poppins:wght@500;700&display=swap"
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
           <link
             rel="stylesheet"
@@ -23,7 +22,7 @@ export default class MyDocument extends Document {
           {/* Inject MUI styles first to match with the prepend: true configuration. */}
           {this.props.emotionStyleTags}
         </Head>
-        <body>
+        <body style={{ background: "#2D3540" }}>
           <Main />
           <NextScript />
         </body>

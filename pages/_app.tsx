@@ -6,7 +6,6 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { CacheProvider } from "@emotion/react";
 import theme from "../src/theme";
 import createEmotionCache from "../src/createEmotionCache";
-
 const clientSideEmotionCache = createEmotionCache();
 
 export default function MyApp(props) {
@@ -18,7 +17,7 @@ export default function MyApp(props) {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <ThemeProvider theme={theme}>
-        <CssBaseline />
+        <CssBaseline enableColorScheme />
         <Component {...pageProps} />
       </ThemeProvider>
     </CacheProvider>
